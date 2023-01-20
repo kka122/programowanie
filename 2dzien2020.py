@@ -12,5 +12,4 @@ with open("drugidzien2020.txt","r") as f:
             item1=ite.replace("-"," ")
             item2=item1.replace(":"," ")
             gotowe_dane.append(item2)
-    print(gotowe_dane)
-
+    
