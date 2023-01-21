@@ -7,9 +7,17 @@ with open("drugidzien2020.txt","r") as f:
     print(dane)
     print("to tego momentu jest g")
     gotowe_dane=[]
+    count=0
+    jd=[]
     for itm in dane:
-        for ite in itm:
-            item1=ite.replace("-"," ")
-            item2=item1.replace(":"," ")
-            gotowe_dane.append(item2)
-    
+        print(itm)
+        zakres = itm[0]
+        litera = itm[1]
+        haslo = itm[2]
+        zakres1=zakres.replace("-"," ")
+        litera1=litera.replace(":","")
+        liczba_liter=haslo.count(litera1)
+        print(liczba_liter)
+        if int(zakres1[0]) >= liczba_liter <= int(zakres1[-1]):
+            count+=1
+        print(count)
