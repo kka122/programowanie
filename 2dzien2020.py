@@ -14,10 +14,11 @@ with open("drugidzien2020.txt","r") as f:
         zakres = itm[0]
         litera = itm[1]
         haslo = itm[2]
-        zakres1=zakres.replace("-"," ")
+        zakres1=zakres.split("-")
         litera1=litera.replace(":","")
         liczba_liter=haslo.count(litera1)
         print(liczba_liter)
-        if int(zakres1[0]) >= liczba_liter <= int(zakres1[-1]):
+        print(zakres1[-1])
+        if int(zakres1[0]) >= liczba_liter and liczba_liter <= int(zakres1[-1]):
             count+=1
-        print(count)
+print(count)
