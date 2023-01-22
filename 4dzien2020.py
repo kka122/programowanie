@@ -24,10 +24,29 @@ for it in dane2:
         value=atrybut1[1]
         slownik[key]=value
     slowniki.append(slownik)
-for key in slowniki:
-    for itm in key:
-        if key[itm] == "byr" and key[itm] =="iyr" and key[itm] =="eyr" and key[itm] == "hgt" and key[itm] =="hcl" and key[itm]== "ecl" and key[itm] == "pid":
-            count+=1
 
-print(slowniki)
-print(count)
+
+def is_passport_valid(passport):
+    if passport.get("byr") is  None:
+        return False
+    if passport.get("iyr") is  None:
+        return False
+    if passport.get("eyr") is  None:
+        return False
+    if passport.get("hgt") is  None:
+        return False
+    if passport.get("hcl") is  None:
+        return False
+    if passport.get("ecl") is  None:
+        return False
+    if passport.get("pid") is  None:
+        return False
+    return True
+
+count3=0
+for passport in slowniki:
+    if is_passport_valid(passport) == True:
+        count3+=1
+
+
+print(count3)

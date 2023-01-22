@@ -34,15 +34,13 @@ with open("drugidzien2020.txt","r") as f:
     count1=0
     jd=[]
     for itm in dane:
-        print(itm)
         zakres = itm[0]
         litera = itm[1]
         haslo = itm[2]
         zakres1=zakres.split("-")
         litera1=litera.replace(":","")
-        liczba_liter=haslo.count(litera1)
-        print(liczba_liter)
-        print(zakres1[0])
-        if haslo[int(zakres1[0])] == litera1 or haslo[int(zakres1[-1])-1] == litera1:
+        if haslo[int(zakres1[0])-1] == litera1 or haslo[int(zakres1[-1])-1] == litera1:
             count1+=1
+        if haslo[int(zakres1[0])-1] == litera1 and haslo[int(zakres1[-1])-1] == litera1:
+            count1-=1
 print(count1)
