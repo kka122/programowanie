@@ -31,7 +31,7 @@ with open("drugidzien2020.txt","r") as f:
     print(dane)
     print("to tego momentu jest g")
     gotowe_dane=[]
-    count=0
+    count1=0
     jd=[]
     for itm in dane:
         print(itm)
@@ -43,6 +43,6 @@ with open("drugidzien2020.txt","r") as f:
         liczba_liter=haslo.count(litera1)
         print(liczba_liter)
         print(zakres1[0])
-        if haslo[int(zakres1[0])] == litera1 or haslo[int(zakres1[-1])] == litera1:
-            count+=1
-print(count)
+        if haslo[int(zakres1[0])] == litera1 or haslo[int(zakres1[-1])-1] == litera1:
+            count1+=1
+print(count1)

@@ -22,9 +22,5 @@ with open("szostydzien2020.txt","r") as f:
     odpowiedzi1 = []
     for item in wszystko:
         odpowiedzi=item.split("\n")
-        odpowiedzi1.append(odpowiedzi)
-    print(odpowiedzi1)
-    zbiory = []
-    for item1 in odpowiedzi1:
-            zbiory.append(set(item1))
-    print(zbiory)
+        for it in odpowiedzi:
+            zbior=set(it)
