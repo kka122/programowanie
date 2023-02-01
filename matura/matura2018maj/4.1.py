@@ -1,4 +1,4 @@
-with open("przyklad.txt", "r") as f:
+with open("sygnaly.txt", "r") as f:
     wszystko = f.read()
     slowa = []
     count = 0
@@ -13,13 +13,4 @@ for slowo1 in slowa:
         haslo.append(slowo2[9])
 print(haslo)
 print("nastepna czesc")
-wszystko.split("\n")
-ilosc_liter={}
-for i in wszystko:
-    for itm in i:
-        key=i
-        value=i.count(itm)
-        ilosc_liter[key]=value
-        print()
-
 

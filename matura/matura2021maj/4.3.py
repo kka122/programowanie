@@ -19,4 +19,3 @@ print(maksymalna_wartosc)
 szukana_litera=ilosc_liter[37]
 print(szukana_litera)
 
-
