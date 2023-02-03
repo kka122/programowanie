@@ -1,0 +1,1 @@
+with open("przyklad.txt","r")as f:
