@@ -11,10 +11,11 @@ for a in wszystko:
             if c%b==0 and b%a==0 and c!=b and b!= a:
                 print(a,b,c)
 
+wszystko.sort()
+print(wszystko)
+n = len(wszystko)
+
 for a in wszystko:
-    for b in wszystko:
-        for c in wszystko:
-            for d in wszystko:
-                for e in wszystko:
-                    if e%d==0 and d%c==0 and c%b==0 and b%a==0 and e!=d and d!=c and c != b and b!=a:
-                        print(a,b,c,d,e)
+    podzielne = [b for b in wszystko if b%a==0]
+    if len(podzielne) > 4:
+        print(podzielne)
