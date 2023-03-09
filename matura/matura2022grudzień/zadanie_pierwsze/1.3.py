@@ -1,18 +1,30 @@
 with open("mecz_przyklad.txt","r")as f:
     wszystko=f.read()
-poprzednia=wszystko[0]
-dl=0
-res=0
-max_dl=0
+ilosc_a=[]
+ilosc_b=[]
+count_a=0
+count_b=0
 for i in wszystko:
-    if i==poprzednia:
-        dl+=1
+    if i=="A":
+        count_a+=1
+        ilosc_a.append(count_a)
+        count_b=0
     else:
-        dl=1
-    if dl==10:
-        res+=1
-    if dl>max_dl:
-        max_dl=dl
-        max_d=i
-    poprzednia=i
-print(res,max_dl,max_d)
+        count_b+=1
+        ilosc_b.append(count_b)
+        count_a=0
+
+
+dobre_passy_a=0
+ilosc_max_a=max(ilosc_a)
+ilosc_max_b=max(ilosc_b)
+dobre_passy_b=0
+for item in ilosc_a:
+    if item==10:
+        dobre_passy_a+=1
+for item2 in ilosc_b:
+    if item2==10:
+        dobre_passy_b+=1
+print("najdluzsza passa a",ilosc_max_a,"ilosc dobrych pass a",dobre_passy_a)
+print("najdluzsza passa b",ilosc_max_b,"ilosc dobrych pass b",dobre_passy_b)
+print("najdluzsza passa jest dla litery A i jest to ",ilosc_max_a,"ilosc dobrych pass",dobre_passy_a+dobre_passy_b)

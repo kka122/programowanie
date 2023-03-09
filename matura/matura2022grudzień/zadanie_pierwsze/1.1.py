@@ -1,4 +1,9 @@
 with open("mecz_przyklad.txt", "r") as f:
     wszystko=f.read()
-liczba_meczy=wszystko.count("AB")+wszystko.count("BA")
-print(liczba_meczy)
+pierwsza=wszystko[0]
+count=0
+for i in wszystko:
+    if pierwsza!=i:
+        count+=1
+    pierwsza=i
+print(count)
