@@ -20,7 +20,7 @@ def czy_liczba_M_i_a_sa_wzglednie_pierwsze(x,y):
             return False
     return 1
 
-if czy_liczba_jest_pierwsza(liczba_M,liczba_a)==1:
+if czy_liczba_M_i_a_sa_wzglednie_pierwsze(liczba_M,liczba_a)==1:
     ilosc_par+=1
 
 print(ilosc_par)
