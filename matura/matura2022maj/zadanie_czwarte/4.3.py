@@ -1,4 +1,4 @@
-with open("przyklad.txt","r")as f:
+with open("przyklad.txt", "r")as f:
     wszy=f.read().split("\n")
 print(wszy)
 wszystko=[]

@@ -1,4 +1,4 @@
-with open("liczby.txt","r")as f:
+with open("liczby.txt", "r")as f:
     wszystko=f.read().split("\n")
 lista_liczb=[]
 for i in wszystko:
