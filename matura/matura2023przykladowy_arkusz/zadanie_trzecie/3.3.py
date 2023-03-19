@@ -1,4 +1,4 @@
-with open("liczby_przyklad.txt","r") as f:
+with open("liczby.txt","r") as f:
     wszystko=f.read().split("\n")
 ilosc_liczb_pierwszych=0
 def czy_liczba_jest_pierwsza(x):

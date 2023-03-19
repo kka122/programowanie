@@ -1,4 +1,4 @@
-with open("instrukcje.txt","r") as f:
+with open("instrukcje.txt", "r") as f:
     linijki=f.read().split("\n")
     print(linijki)
     litery=[]

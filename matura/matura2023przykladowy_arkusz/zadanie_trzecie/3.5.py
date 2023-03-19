@@ -1,9 +1,9 @@
-with open("liczby_przyklad.txt","r") as f:
+with open("liczby_przyklad.txt.txt","r") as f:
     wszystko=f.read().split("\n")
 ilosc_par=0
-def ilosc_trojek(x,y,z):
-    for i in range(0, x-1):
-        if y**i%x==z:
+def ilosc_trojek(M,A,B ):
+    for i in range(0, M):
+        if (A**i)%M==B:
             return True
     return False
 for item in wszystko:

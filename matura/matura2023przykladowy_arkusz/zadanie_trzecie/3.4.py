@@ -1,4 +1,4 @@
-with open("liczby_przyklad.txt","r") as f:
+with open("liczby.txt","r") as f:
     wszystko=f.read().split("\n")
 ilosc_par=0
 from math import gcd
