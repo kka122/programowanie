@@ -1,4 +1,4 @@
-with open("sygnaly.txt","r")as f:
+with open("sygnaly.txt", "r")as f:
     wszystko=f.read().split("\n")
 liczba_liter=[]
 for i in wszystko:
