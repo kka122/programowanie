@@ -1,4 +1,4 @@
-with open("szostydzien2020.txt","r") as f:
+with open("szostydzien2020.txt", "r") as f:
     wszystko=f.read().split("\n\n")
     print(wszystko)
     odpowiedzi1=[]
@@ -16,7 +16,7 @@ with open("szostydzien2020.txt","r") as f:
             count+=1
     print(count)
     print("druga czesc")
-with open("szostydzien2020.txt","r") as f:
+with open("szostydzien2020.txt", "r") as f:
     wszystko=f.read().split("\n\n")
 print(wszystko)
 odpowiedzi1 = []

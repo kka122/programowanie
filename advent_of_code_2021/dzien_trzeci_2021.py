@@ -1,4 +1,4 @@
-with open("dzien_trzeci_2021.txt","r") as f:
+with open("dzien_trzeci_2021.txt", "r") as f:
     wszystko=f.read().split("\n")
 gamma=[]
 epsilon=[]

@@ -1,4 +1,4 @@
-with open("czwartydzien2020.txt","r") as f:
+with open("czwartydzien2020.txt", "r") as f:
     wszystko=f.read()
     paszporty=[]
     print(wszystko)

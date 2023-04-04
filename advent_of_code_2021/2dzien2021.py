@@ -1,4 +1,4 @@
-with open("drugidzien2021.txt","r") as f:
+with open("drugidzien2021.txt", "r") as f:
     wszystko = f.read()
     wiersze = wszystko.split("\n")
     print(wiersze)
@@ -19,7 +19,7 @@ with open("drugidzien2021.txt","r") as f:
 
 print(glebokosc*odleglosc)
 print("Część druga")
-with open("drugidzien2021.txt","r") as f:
+with open("drugidzien2021.txt", "r") as f:
     wszystko = f.read()
     wiersze = wszystko.split("\n")
     print(wiersze)

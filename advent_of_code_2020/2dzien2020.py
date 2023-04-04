@@ -1,4 +1,4 @@
-with open("drugidzien2020.txt","r") as f:
+with open("drugidzien2020.txt", "r") as f:
     wszystko=f.read().split("\n")
     dane = []
     for i in wszystko:
@@ -22,7 +22,7 @@ with open("drugidzien2020.txt","r") as f:
         if liczba_liter >= int(zakres1[0]) and liczba_liter <= int(zakres1[-1]):
             count+=1
 print(count)
-with open("drugidzien2020.txt","r") as f:
+with open("drugidzien2020.txt", "r") as f:
     wszystko=f.read().split("\n")
     dane = []
     for i in wszystko:
