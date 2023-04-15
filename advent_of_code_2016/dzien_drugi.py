@@ -18,3 +18,4 @@ for komendy in wszystko:
         if komenda=="D" and wiersze ==1:
             wiersze+=1
             print(keypad[wiersze][kolumny])
+    print(keypad[wiersze][kolumny])
