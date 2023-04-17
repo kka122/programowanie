@@ -28,15 +28,15 @@ for item in pary2:
         dluzszy_zakres.append(len(item[0]))
     else:
         dluzszy_zakres.append(len(item[-1]))
-print(dluzszy_zakres)
+
 
 
 suma_zakresow=[]
 for l in pary2:
     suma_zakresow.append(set(l[0]+l[-1]))
-print(suma_zakresow)
-for d in suma_zakresow:
 
-    if len(d)==dluzszy_zakres[]:
+
+for k in range(0,len(dluzszy_zakres)):
+    if dluzszy_zakres[k]==len(suma_zakresow[k]):
         dobre_pary+=1
 print(dobre_pary)
