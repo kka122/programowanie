@@ -20,7 +20,6 @@ for i in pary1:
         pary3.append(zakresy1)
     pary2.append(pary3)
 
-
 dluzszy_zakres=[]
 dobre_pary=0
 for item in pary2:
@@ -29,12 +28,9 @@ for item in pary2:
     else:
         dluzszy_zakres.append(len(item[-1]))
 
-
-
 suma_zakresow=[]
 for l in pary2:
     suma_zakresow.append(set(l[0]+l[-1]))
-
 
 for k in range(0,len(dluzszy_zakres)):
     if dluzszy_zakres[k]==len(suma_zakresow[k]):

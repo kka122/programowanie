@@ -4,7 +4,6 @@ with open("dzien_drugi","r") as f:
 wiersze=1
 kolumny=1
 punkt_poczatkowy=keypad[wiersze][kolumny]
-haslo=[]
 for komendy in wszystko:
     for komenda in komendy:
         if komenda=="U":
@@ -15,7 +14,7 @@ for komendy in wszystko:
         elif komenda=="L":
             if  kolumny ==0:
                 kolumny=kolumny
-            if kolumny ==1 or wiersze==2:
+            if kolumny ==1 or kolumny==2:
                 kolumny-=1
         elif komenda=="R":
             if kolumny ==2:
@@ -27,5 +26,4 @@ for komendy in wszystko:
                 wiersze = wiersze
             if wiersze==0 or wiersze==1 :
                 wiersze+=1
-        print(keypad[wiersze][kolumny])
-print(haslo)
+    print(keypad[wiersze][kolumny])
