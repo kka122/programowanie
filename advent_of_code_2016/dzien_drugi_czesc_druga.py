@@ -1,6 +1,6 @@
 keypad=[["X","X","X","X","X","X","X"],["X","X","X","1","X","X","X"],["X","X","2","3","4","X","X"],["X","5","6","7","8","9","X"],["X","X","A","B","C","X","X"],["X","X","X","D","X","X","X"],["X","X","X","X","X","X","X"]]
 with open("dzien_drugi","r") as f:
-    wszystko=f.read().split("\n")
+    wszystko=f.read().split()
 wiersze=3
 kolumny=1
 punkt_poczatkowy=keypad[wiersze][kolumny]
@@ -25,6 +25,6 @@ for komendy in wszystko:
             if keypad[wiersze][kolumny]=="X":
                 wiersze-=1
 
-    print(keypad[wiersze][kolumny])
+        print(keypad[wiersze][kolumny])
 
 
