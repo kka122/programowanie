@@ -1,26 +1,39 @@
-with open("dzien_trzeci","r")as f:
-    plecaki=f.read().split("\n")
-litery=[]
+def get_input():
+    with open("dzien_trzeci", "r") as f:
+        plecaki=f.read().split("\n")
+    return plecaki
 
-for plecak in plecaki:
-    p=int(len(plecak)/2)
+def dzielenie_plecaka(plecak):
+    p = int(len(plecak) / 2)
     przedzial1=plecak[:p]
     przedzial2=plecak[p:]
-    dobre_litery = []
-    for litera in przedzial1:
-        for litera1 in przedzial2:
-            if litera==litera1:
-                dobre_litery.append(litera1)
-    litery.append(set(dobre_litery))
-print(litery)
-x=0
-for i in litery:
-    for k in i:
-        if k ==k.upper():
-            x+=ord(k)-65+27
-        elif k ==k.lower():
-            x+=ord(k)-64-32
-print(x)
+    return przedzial1,przedzial2
+
+def wspolny_element_przedzialow(przedzial1,przedzial2):
+    return set(przedzial1)&set(przedzial2)
+
+def litera_na_liczbe(litera):
+    if litera ==litera.upper():
+        return ord(litera)-65+27
+    elif litera ==litera.lower():
+        return ord(litera)-64-32
+
+def main():
+    plecaki=get_input()
+    liczba=0
+    for plecak in plecaki:
+        przedzial1,przedzial2=dzielenie_plecaka(plecak)
+        litery=wspolny_element_przedzialow(przedzial1,przedzial2)
+        for litera in litery:
+            liczba+=litera_na_liczbe(litera)
+    print(liczba)
+
+
+main()
+
+
+
+
 
 
 
