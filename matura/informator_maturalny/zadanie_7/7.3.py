@@ -8,12 +8,8 @@ slownik_dekodujacy={}
 for i in szyfr:
     for k in i:
         szyfr_rozdzielony.append(k)
-with open("czestosc.txt","r") as r:
-    dekodowanie=r.read().split("\n")
-for d in dekodowanie:
-    wartosci_liczbowie=d.split()
-    slownik_dekodujacy[wartosci_liczbowie[0]]=wartosci_liczbowie[-1]
+klucz={'A': 41, 'B': 42, 'C': 98, 'D': 7, 'E': 18, 'F': 43, 'G': 0, 'H': 36, 'I': 17, 'J': 32, 'K': 91, 'L': 34, 'M': 86, 'N': 39, 'O': 50, 'P': 44, 'Q': 0, 'R': 31, 'S': 0, 'T': 60, 'U': 38, 'V': 16, 'W': 2, 'X': 92, 'Y': 68, 'Z': 15}
 
 for litera in szyfr_rozdzielony:
-    szyfr_w_liczbach.append(slownik_dekodujacy[litera])
+    szyfr_w_liczbach.append(klucz[litera])
 print(szyfr_w_liczbach)

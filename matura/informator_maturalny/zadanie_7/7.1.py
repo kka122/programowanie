@@ -42,7 +42,7 @@ for i in wszystko:
         wszystkie_linie.append(k)
 
 for i in range(ord("A"),(ord("Z")+1)):
-    slownik[wszystkie_linie.count(chr(i))]=chr(i)
+    slownik[chr(i)]=wszystkie_linie.count(chr(i))
 print(slownik)
 
 
