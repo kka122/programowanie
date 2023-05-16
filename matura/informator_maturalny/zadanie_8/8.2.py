@@ -3,15 +3,6 @@ def wczytanie_pliku():
         wszystko=f.read().split("\n")
         return wszystko
 
-
-
-
-def sprawdzanie_par(ciag):
-    for i in range(0,len(ciag)):
-        for k in range(0,len(ciag)):
-            if ciag[i]>ciag[k] and i<k:
-                return True
-
 def main():
     licznik = 0
     ciag=wczytanie_pliku()
