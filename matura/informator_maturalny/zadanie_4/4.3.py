@@ -8,9 +8,19 @@ def wczytanie_pliku():
 
 def main():
     liczby=wczytanie_pliku()
-    for i in range(len(liczby)):
-        for j in range(len(liczby)):
-            if int(liczby[i])>int(liczby[j]) and j!=i and i>j:
+    j=0
+    l=0
+    roznice=[]
+    wszystkie_roznice=[]
+    for k in range(len(liczby)):
+        for i in range(len(liczby)):
+            if liczby[i]!=liczby[k]:
+                j=i-k
+                l=int(liczby[i]) - int(liczby[k])
+                roznice.append(j)
+                wszystkie_roznice.append(l)
+        # wszystkie_roznice.append(roznice)
+    print(max(roznice))
 
 
 
